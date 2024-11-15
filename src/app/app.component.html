@@ -1,0 +1,7 @@
+<h1>Angular {{ version }} works!</h1>
+<div *ngIf="loading$">Loading...</div>
+<!-- <div *ngIf="error$ as error">{{ error }}</div> -->
+<ul>
+  <li *ngFor="let item of test">{{ item.title }}</li>
+</ul>
+<button (click)="fetchData()">Fetch Data</button>
